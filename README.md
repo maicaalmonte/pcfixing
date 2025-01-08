@@ -2,54 +2,54 @@
 
 **1. clone repository**
 
-    ```bash
-    git clone https://github.com/maicaalmonte/maicaalmonte.git
-    cd maicaalmonte
+     
+        git clone https://github.com/maicaalmonte/maicaalmonte.git
+        cd maicaalmonte
 
 **2. view commit history**
 
-    ``` bash
-    git log
+    
+        git log
 
 **3. reset or rebase**
 <br>a.  reset your current branch to a specific commit
 
-     ``` bash
-    git reset --hard 27884ee50b6abfb209b33feef3edd89d1e14c0d2^
+     
+        git reset --hard 27884ee50b6abfb209b33feef3edd89d1e14c0d2^
 
 b. interactive rebase to modify commits in your history:
     
-    ```bash
-    git rebase -i 27884ee50b6abfb209b33feef3edd89d1e14c0d2^
-
+    
+        git rebase -i 27884ee50b6abfb209b33feef3edd89d1e14c0d2^
+    
 
 
 **4. to remove the commit you want to remove in the list of commits**
 <br>a. look for the line corresponding to the commit
 
-    ``` php
-    pick 27884ee <commit message>
+    
+        pick 27884ee <commit message>
  <br>b. change the word pick to drop
 
-     ```sql
-     drop 27884ee <commit message>
+     
+         drop 27884ee <commit message>
 
   **5. save the file and exit**
 
-    ```bash
-    press "ESC", type "wq", and press "ENTER"
+    
+        press "ESC", type "wq", and press "ENTER"
 
 **6. force push to github**
 
-    ``` bash
-    git push origin main --force
+    
+        git push origin main --force
 
 #
 **OTHERS**
 
 <br> 1. check current path in powershell
 
-    ``` bash
+    
         echo $env:PATH
 
     
