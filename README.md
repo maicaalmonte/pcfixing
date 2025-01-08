@@ -44,6 +44,14 @@ b. interactive rebase to modify commits in your history:
     ``` bash
     git push origin main --force
 
+#
+**OTHERS**
+
+<br> 1. check current path in powershell
+
+    ``` bash
+        echo $env:PATH
+
     
 
 
