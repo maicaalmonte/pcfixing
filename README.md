@@ -52,10 +52,22 @@ b. interactive rebase to modify commits in your history:
     
         echo $env:PATH
 
-<br>2. configuration file PostgreSQL:
+<br> 2. configuration file PostgreSQL:
 
      notepad "C:\Program Files\PostgreSQL\17\data\postgresql.conf"
 
-    
+<br> 3. automatically extracting the required libraries:
+
+     pip install pipreqs
+
+<br> 4. run pipreqs to generate a requirement.txt file:
+
+     pipreqs .
+
+<br> 5. if you suspect some packages are missing:
+
+     pip check
+
+
 
 
