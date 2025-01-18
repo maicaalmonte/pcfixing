@@ -45,17 +45,53 @@ b. interactive rebase to modify commits in your history:
         git push origin main --force
 
 #
-**OTHERS**
+**OTHERS (RANDOM)**
 
 <br> 1. check current path in powershell
 
     
         echo $env:PATH
 
-<br>2. configuration file PostgreSQL:
+<br> 2. configuration file PostgreSQL:
 
      notepad "C:\Program Files\PostgreSQL\17\data\postgresql.conf"
 
-    
+<br> 3. automatically extracting the required libraries:
+
+     pip install pipreqs
+
+<br> 4. run pipreqs to generate a requirement.txt file:
+
+     pipreqs .
+
+<br> 5. if you suspect some packages are missing:
+
+     pip check
+
+**CHECK FOR MISSING DEPENDENCIS**
+
+<br> 1. make sure all necessary dependencies are installed:
+
+     npm install
+
+<br> 2. sometimes clearing the npm cache can help:
+
+     npm cache clean --force
+     npm install
+
+<br> 3. ensure node.js module is compatible
+<br>     a. if you're unsure, try using stable version
+
+          nvm use stable
+
+<br>     b. check your node version:
+
+          node -v
+
+<br>     check if the issue is specific to your vercel or project:
+
+          npm run build
+
+     
 
 
